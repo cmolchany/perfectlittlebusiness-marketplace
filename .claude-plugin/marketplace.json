@@ -1,0 +1,27 @@
+{
+  "name": "plb",
+  "displayName": "Perfect Little Business",
+  "owner": {
+    "name": "Cindy Molchany",
+    "email": "hello@perfectlittlebusiness.com",
+    "url": "https://perfectlittlebusiness.com"
+  },
+  "description": "The Perfect Little Business plugin marketplace. The AI Operating Layer™ installed in Claude Code. Methodology, infrastructure, and automations for entrepreneurs who are subject matter experts.",
+  "plugins": [
+    {
+      "name": "plb-launchpad",
+      "source": "./plb-launchpad",
+      "version": "1.0.0",
+      "description": "Your AI Operating System. Install second-brain infrastructure, eleven working skills, and three protective hooks in one move. Companion plugin for the AIOS Launchpad workshop.",
+      "category": "methodology",
+      "keywords": [
+        "ai-operating-layer",
+        "authority-directory-method",
+        "second-brain",
+        "subject-matter-experts",
+        "methodology",
+        "perfect-little-business"
+      ]
+    }
+  ]
+}

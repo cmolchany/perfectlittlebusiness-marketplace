@@ -1,0 +1,21 @@
+{
+  "name": "plb-launchpad",
+  "version": "1.0.0",
+  "description": "The Perfect Little Business Launchpad — your AI Operating System. Eleven skills, three hooks, and your second-brain folder structure, installed in one move. Companion plugin for the AIOS Launchpad workshop.",
+  "author": {
+    "name": "Cindy Molchany",
+    "email": "hello@perfectlittlebusiness.com",
+    "url": "https://perfectlittlebusiness.com"
+  },
+  "homepage": "https://perfectlittlebusiness.com",
+  "repository": "https://github.com/cmolchany/perfectlittlebusiness-marketplace",
+  "license": "Proprietary — Perfect Little Business",
+  "keywords": [
+    "ai-operating-layer",
+    "authority-directory-method",
+    "second-brain",
+    "subject-matter-experts",
+    "methodology",
+    "perfect-little-business"
+  ]
+}

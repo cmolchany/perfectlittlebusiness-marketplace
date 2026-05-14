@@ -1,0 +1,25 @@
+# System noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor crud
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local archives / generated artifacts
+*.zip
+*.tar.gz
+
+# Local logs
+*.log
+
+# Local Claude Code state (this repo ships a plugin; it is not itself a Claude project)
+.claude/
+.claude-cache/
+
+# Internal-only reference material (workshop script, deploy procedure, etc.) —
+# lives alongside the repo for convenience but never ships publicly.
+_internal/
