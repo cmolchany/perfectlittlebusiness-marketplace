@@ -6,11 +6,11 @@ This marketplace hosts the AI Operating Layer™ — the infrastructure that tur
 
 ## Available Plugins
 
-### plb-launchpad (v1.0.0)
+### perfectlittlebusiness (v1.0.0)
 
 Your AI Operating System. Installs your second-brain folder structure, eleven working skills, and three protective hooks. Companion plugin for the AIOS Launchpad workshop.
 
-[See plugin details →](./plb-launchpad/README.md)
+[See plugin details →](./perfectlittlebusiness/README.md)
 
 ---
 
@@ -25,13 +25,13 @@ In Claude Code, run:
 Then install the plugin you want:
 
 ```
-/plugin install plb-launchpad@plb
+/plugin install perfectlittlebusiness@plb
 ```
 
 Then in any project folder:
 
 ```
-/setup
+/perfectlittlebusiness:setup
 ```
 
 Answer five questions. Your AI Operating System is installed.

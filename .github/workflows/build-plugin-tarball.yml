@@ -1,0 +1,92 @@
+name: Build & publish plugin tarball
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'perfectlittlebusiness/**'
+      - '.claude-plugin/**'
+      - '.github/workflows/build-plugin-tarball.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-plugin-tarball
+  cancel-in-progress: false
+
+jobs:
+  build-and-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Read plugin version
+        id: meta
+        run: |
+          VERSION=$(jq -r .version perfectlittlebusiness/.claude-plugin/plugin.json)
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "Plugin version: $VERSION"
+
+      - name: Build tarball
+        run: |
+          # Exclude internal-only and version-control artifacts from the
+          # tarball — install.sh consumers should only see plugin content.
+          tar --exclude='.git' \
+              --exclude='.github' \
+              --exclude='.gitignore' \
+              --exclude='_internal' \
+              --exclude='.DS_Store' \
+              -czf "perfectlittlebusiness-${{ steps.meta.outputs.version }}.tar.gz" \
+              .claude-plugin \
+              perfectlittlebusiness \
+              LICENSE \
+              README.md
+          ls -lh "perfectlittlebusiness-${{ steps.meta.outputs.version }}.tar.gz"
+
+      - name: Verify tarball structure
+        run: |
+          # Sanity check: extracted layout must have .claude-plugin/ +
+          # perfectlittlebusiness/.claude-plugin/plugin.json at the right depth.
+          mkdir -p _verify
+          tar -xzf "perfectlittlebusiness-${{ steps.meta.outputs.version }}.tar.gz" -C _verify
+          test -f _verify/.claude-plugin/marketplace.json
+          test -f _verify/perfectlittlebusiness/.claude-plugin/plugin.json
+          test -d _verify/perfectlittlebusiness/skills
+          test -d _verify/perfectlittlebusiness/hooks
+          echo "✓ Tarball structure verified."
+          rm -rf _verify
+
+      - name: Upload to Supabase Storage (versioned + latest)
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          BUCKET: aios-plugin-releases
+          VERSION: ${{ steps.meta.outputs.version }}
+        run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            echo "::error::SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY repo secrets are required."
+            exit 1
+          fi
+
+          TARBALL="perfectlittlebusiness-${VERSION}.tar.gz"
+
+          upload() {
+            local target="$1"
+            echo "→ Uploading to $BUCKET/$target..."
+            # Supabase Storage REST: PUT (with upsert) lets us overwrite latest.
+            curl --fail-with-body -sS \
+              -X PUT \
+              -H "Authorization: Bearer $SUPABASE_SERVICE_ROLE_KEY" \
+              -H "Content-Type: application/gzip" \
+              -H "x-upsert: true" \
+              --data-binary "@$TARBALL" \
+              "$SUPABASE_URL/storage/v1/object/$BUCKET/$target"
+            echo
+          }
+
+          upload "perfectlittlebusiness-${VERSION}.tar.gz"
+          upload "perfectlittlebusiness-latest.tar.gz"
+          echo "✓ Uploaded version $VERSION + latest."

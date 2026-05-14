@@ -9,8 +9,8 @@
   "description": "The Perfect Little Business plugin marketplace. The AI Operating Layer™ installed in Claude Code. Methodology, infrastructure, and automations for entrepreneurs who are subject matter experts.",
   "plugins": [
     {
-      "name": "plb-launchpad",
-      "source": "./plb-launchpad",
+      "name": "perfectlittlebusiness",
+      "source": "./perfectlittlebusiness",
       "version": "1.0.0",
       "description": "Your AI Operating System. Install second-brain infrastructure, eleven working skills, and three protective hooks in one move. Companion plugin for the AIOS Launchpad workshop.",
       "category": "methodology",
