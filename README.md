@@ -52,7 +52,7 @@ Perfect Little Business builds AI Operating Layers for entrepreneurs who are sub
 
 Run by [Cindy Molchany](https://perfectlittlebusiness.com).
 
-Built on the methodology that says: *The Prize Never Chases.*
+Built on a simple conviction: the expert attracts, never pursues.
 
 ---
 
