@@ -106,7 +106,7 @@ Output exactly this message:
 - `/perfectlittlebusiness:granola-pull` — pull meetings into your brain
 - `/perfectlittlebusiness:draft-social` — draft posts in your voice
 
-**Next move:** Type `/perfectlittlebusiness:start` to confirm the system loads. Then begin populating your brain folder using the AIOS Launchpad tools in Authority HQ.
+**Next move:** Type `/perfectlittlebusiness:start` to confirm the system loads. Then begin populating your brain folder using the Launchpad Tools in Authority HQ.
 
 The operating system is installed. The brain is what you build inside it.
 ```

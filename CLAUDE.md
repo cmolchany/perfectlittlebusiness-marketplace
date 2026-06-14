@@ -24,3 +24,19 @@ offer files is, permanently:
   brain content, brain file copies, or this path into the shipped plugin
   (`perfectlittlebusiness/`). Client projects never reference or inherit
   the PLB brain.
+
+---
+
+## Status surface (PLB Business OS)
+
+At the end of every session (and whenever /end runs), write/overwrite:
+`/Users/cindymolchany/Dropbox/_00_COWORK_OS/status/marketplace-root.status.json`
+following the schema in `_00_COWORK_OS/STATUS_CONVENTION.md`.
+
+Rules:
+- Progress surface ONLY: state, phase, now, next, blockers, open items.
+  Never code, secrets, or client deliverable content.
+- Keep `now` and `next` to one line each. Blockers are the most valuable
+  field — never omit a real one.
+- This file is how the business OS sees this project. If it's stale, the
+  project looks stale.

@@ -1,4 +1,4 @@
-# PLB Launchpad — Your AI Operating System
+# Perfect Little Business — Your AI Operating System
 
 The Perfect Little Business Launchpad is the infrastructure layer of your AI Operating System, installed in Claude Code.
 
@@ -75,13 +75,13 @@ Answer five questions. Your AI Operating System is installed.
 
 ## Where You Are Right Now
 
-If you're reading this, you're in the **AIOS Launchpad** — the 90-minute live workshop where you installed Claude Code, installed this plugin, and stood up your AI operating system.
+If you're reading this, you've installed the **Perfect Little Business plugin** and stood up your AI operating system.
 
 The infrastructure is running. The intelligence layer is what you populate next.
 
 ### Your Next Two Weeks
 
-You have access to the **AIOS Launchpad tools inside the Authority HQ app** — the structured prompts that walk you through building each piece of your second brain:
+You have access to the **Launchpad Tools inside the Authority HQ app** — the structured prompts that walk you through building each piece of your second brain:
 
 - Your source of truth
 - Your convictions
@@ -125,6 +125,6 @@ PLB builds AI Operating Layers for entrepreneurs who are subject matter experts 
 
 ## License
 
-Proprietary. Perfect Little Business. This plugin is provided to AIOS Launchpad participants for personal use. Please don't redistribute. If a friend needs this, send them to [perfectlittlebusiness.com](https://perfectlittlebusiness.com).
+Proprietary. Perfect Little Business. This plugin is provided to Perfect Little Business clients for personal use. Please don't redistribute. If a friend needs this, send them to [perfectlittlebusiness.com](https://perfectlittlebusiness.com).
 
 — Cindy Molchany

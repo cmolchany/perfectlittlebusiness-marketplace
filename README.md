@@ -8,7 +8,7 @@ This marketplace hosts the AI Operating Layer™ — the infrastructure that tur
 
 ### perfectlittlebusiness (v1.0.0)
 
-Your AI Operating System. Installs your second-brain folder structure, eleven working skills, and three protective hooks. Companion plugin for the AIOS Launchpad workshop.
+The Perfect Little Business plugin. Your AI Operating System: installs your second-brain folder structure, eleven working skills, and three protective hooks.
 
 [See plugin details →](./perfectlittlebusiness/README.md)
 
