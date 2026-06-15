@@ -3,7 +3,7 @@ name: hygiene
 description: Weekly health check. Audits the project for drift, clutter, stale files, uncommitted work, and brain freshness. Run once per week (Sundays recommended).
 ---
 
-# /perfectlittlebusiness:hygiene — Weekly Health Check
+# /hygiene — Weekly Health Check
 
 ## Purpose
 
@@ -47,7 +47,7 @@ Check if voice-samples/ has at least 2 files. If not, flag it — voice-matching
 ### Step 4: MEMORY.md Continuity
 
 1. Read the last entry. Confirm it's recent.
-2. Check for gaps — sessions that ended without `/perfectlittlebusiness:end`.
+2. Check for gaps — sessions that ended without `/end`.
 
 ### Step 5: Clutter Check
 
@@ -83,7 +83,7 @@ Routine examples:
 - learnings.md stale (no updates in 14+ days)
 - CLAUDE.md older than 30 days
 - No voice samples added
-- Sessions without `/perfectlittlebusiness:end` (gaps in MEMORY.md)
+- Sessions without `/end` (gaps in MEMORY.md)
 
 Optional examples:
 - Clutter at project root

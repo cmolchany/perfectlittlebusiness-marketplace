@@ -3,7 +3,7 @@ name: granola-pull
 description: Pull a Granola meeting into your brain folder. Saves transcript and notes, then surfaces candidate learnings worth capturing. Requires Granola MCP connection.
 ---
 
-# /perfectlittlebusiness:granola-pull — Granola → Brain Importer
+# /granola-pull — Granola → Brain Importer
 
 ## Purpose
 
@@ -34,7 +34,7 @@ If Granola is not connected, output:
 The Granola MCP isn't connected to this Claude. To enable it:
 1. In Claude settings, find Connectors
 2. Connect Granola
-3. Re-run /perfectlittlebusiness:granola-pull
+3. Re-run /granola-pull
 
 For now, you can paste meeting notes directly and I'll save them to brain/reference/meetings/ manually.
 ```
@@ -136,7 +136,7 @@ Output:
 **Saved:** brain/reference/meetings/[filename]
 **Captured:** [X] learnings to brain/learnings.md
 
-Want to also run /perfectlittlebusiness:decide if this meeting led to a decision?
+Want to also run /decide if this meeting led to a decision?
 ```
 
 ---

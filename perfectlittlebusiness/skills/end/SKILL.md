@@ -3,7 +3,7 @@ name: end
 description: Session closer. Updates MEMORY.md with what happened, captures new learnings into brain/learnings.md, captures wins into brain/wins.md, and commits everything. Run this at the end of every session before closing Claude Code.
 ---
 
-# /perfectlittlebusiness:end — Session Closer (Self-Improvement Loop)
+# /end — Session Closer (Self-Improvement Loop)
 
 ## Purpose
 
@@ -122,7 +122,7 @@ Output:
 - Changes committed: [commit message]
 [- Pushed to remote] (if applicable)
 
-**For next session:** Type /perfectlittlebusiness:start. The system picks up exactly where we left off.
+**For next session:** Type /start. The system picks up exactly where we left off.
 
 See you next time.
 ```

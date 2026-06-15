@@ -3,7 +3,7 @@ name: decide
 description: Log a meaningful business or strategic decision with full context and rationale. Captures what you chose, what you chose against, and why. Updates brain/decisions.md. Use after any significant decision.
 ---
 
-# /perfectlittlebusiness:decide — Decision Logger
+# /decide — Decision Logger
 
 ## Purpose
 
@@ -67,7 +67,7 @@ After approval, append to brain/decisions.md.
 
 Ask: "Want to also capture a learning from this decision in brain/learnings.md?"
 
-If yes, transition to the `/perfectlittlebusiness:learn` workflow.
+If yes, transition to the `/learn` workflow.
 
 If no, output: "Decision logged. Carry on."
 

@@ -3,7 +3,7 @@ name: digest
 description: Generate a personal weekly summary from your MEMORY, learnings, decisions, and wins from the past 7 days. Use Sunday for a Monday-clarity reset, or any time you want a one-screen view of recent work.
 ---
 
-# /perfectlittlebusiness:digest — Personal Weekly Summary
+# /digest — Personal Weekly Summary
 
 ## Purpose
 
@@ -97,7 +97,7 @@ If yes, append to MEMORY.md under a "Next week focus" line in the most recent en
   - "Quiet week on output, but the learnings are sharp. Your understanding of the avatar shifted twice. That's groundwork that compounds."
   - "Lots of commits, light on captured learnings. Worth asking yourself what you discovered — there's likely intelligence going uncaptured."
 
-- If the past 7 days have ZERO activity, output: "No activity in the past 7 days. Run `/perfectlittlebusiness:start` to pick a project back up."
+- If the past 7 days have ZERO activity, output: "No activity in the past 7 days. Run `/start` to pick a project back up."
 
 - Don't pad with generic motivational language. The PLB voice is calm, intelligent, honest. Sometimes the honest digest is: "Quiet week. That's fine. Even quiet weeks compound."
 

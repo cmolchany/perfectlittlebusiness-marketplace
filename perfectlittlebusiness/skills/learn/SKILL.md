@@ -3,11 +3,11 @@ name: learn
 description: Capture an insight or learning mid-session without ending the session. Use whenever you notice a pattern, discovery, or insight you want logged before it evaporates. Updates brain/learnings.md immediately.
 ---
 
-# /perfectlittlebusiness:learn — Mid-Session Capture
+# /learn — Mid-Session Capture
 
 ## Purpose
 
-Capture an insight the moment it strikes, without waiting for `/perfectlittlebusiness:end`. Insights are perishable. This skill makes capture frictionless.
+Capture an insight the moment it strikes, without waiting for `/end`. Insights are perishable. This skill makes capture frictionless.
 
 ## When To Use
 
@@ -21,9 +21,9 @@ Capture an insight the moment it strikes, without waiting for `/perfectlittlebus
 
 ### Step 1: Get the Insight
 
-If the user typed `/perfectlittlebusiness:learn` alone with no content, ask: "What did you just learn or notice?"
+If the user typed `/learn` alone with no content, ask: "What did you just learn or notice?"
 
-If the user typed `/perfectlittlebusiness:learn [content]`, use the content directly.
+If the user typed `/learn [content]`, use the content directly.
 
 ### Step 2: Categorize
 

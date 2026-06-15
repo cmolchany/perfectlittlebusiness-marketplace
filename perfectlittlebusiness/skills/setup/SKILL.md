@@ -1,17 +1,17 @@
 ---
 name: setup
-description: One-time orchestrator that installs the AI Operating System in your project. Creates CLAUDE.md, MEMORY.md, the brain/ folder structure, and confirms everything is in place. Run this once per new project.
+description: One-time orchestrator that installs your AI Operating System in this project. Creates CLAUDE.md, MEMORY.md, and your AIOS Brain (the brain/ folder), then confirms everything is in place. Run this once per new project.
 ---
 
-# /perfectlittlebusiness:setup — AI Operating System Installer
+# /setup — AIOS Brain & Operating System Installer
 
 ## Purpose
 
-Install the complete AI Operating System in the current project folder. This is a one-time command per project. Creates all files, populates them with the user's context, and runs verification.
+Install the complete AI Operating System in the current project folder, including your AIOS Brain. This is a one-time command per project. Creates all files, populates them with the user's context, and runs verification.
 
 ## When To Use
 
-- First time setting up Claude Code in a new project folder
+- First time setting up Claude in a new project folder
 - After installing the perfectlittlebusiness plugin
 - When starting a new business, offer, or directory build
 
@@ -34,7 +34,7 @@ Ask one at a time. Wait for each answer before continuing.
 
 **Q2:** "What's your role? (e.g., founder, consultant, coach, creator, subject matter expert)"
 
-**Q3:** "In one paragraph, what does your second brain need to know about your business? What do you do, who do you serve, what's the core problem you solve?"
+**Q3:** "In one paragraph, what does your AIOS Brain need to know about your business? What do you do, who do you serve, what's the core problem you solve?"
 
 **Q4:** "Give me three words that describe your brand voice. (e.g., calm/warm/intelligent or direct/playful/bold)"
 
@@ -54,13 +54,15 @@ Create these files at the project root:
 
 4. **README.md** — brief project overview.
 
-### Phase 4: Create the Brain Folder
+### Phase 4: Create the AIOS Brain
 
-Create `brain/` with these files:
+Create `brain/` with these files (templates in the reference section below):
 
 - `source-of-truth.md` — populated with Q3 answer expanded
 - `convictions.md` — populated with Q5 answer as Conviction 1
-- `avatar-profile.md` — stub with prompts
+- `avatar-profile.md` — stub; populated when the user runs `/avatar-profile`
+- `offer-architecture.md` — stub; populated when the user runs `/offer-architect`
+- `brand-style-guide.md` — stub; populated when the user runs `/brand-style-guide`
 - `learnings.md` — empty, ready to grow
 - `decisions.md` — empty, ready to grow
 - `wins.md` — empty, ready to grow
@@ -68,7 +70,7 @@ Create `brain/` with these files:
 - `reference/README.md` — instructions for reference docs
 - `templates/README.md` — instructions for reusable formats
 
-Use the brain file templates in the reference section below.
+The five foundational-tool files (`source-of-truth`, `convictions`, `avatar-profile`, `offer-architecture`, `brand-style-guide`) are your AIOS Brain. `/setup` stubs them; the five AIOS Brain tools fill them in.
 
 ### Phase 5: Verification
 
@@ -81,6 +83,8 @@ Confirm each file exists:
 - [ ] brain/source-of-truth.md
 - [ ] brain/convictions.md
 - [ ] brain/avatar-profile.md
+- [ ] brain/offer-architecture.md
+- [ ] brain/brand-style-guide.md
 - [ ] brain/learnings.md
 - [ ] brain/decisions.md
 - [ ] brain/wins.md
@@ -97,18 +101,20 @@ Output exactly this message:
 
 **What's now running in this project:**
 - Core files: CLAUDE.md, MEMORY.md, .gitignore, README.md
-- Brain folder: nine files ready to grow with you
-- Eleven skills available: /perfectlittlebusiness:start, /perfectlittlebusiness:end, /perfectlittlebusiness:hygiene, /perfectlittlebusiness:learn, /perfectlittlebusiness:decide, /perfectlittlebusiness:ask, /perfectlittlebusiness:recap, /perfectlittlebusiness:digest, /perfectlittlebusiness:granola-pull, /perfectlittlebusiness:draft-social, and /perfectlittlebusiness:setup (this one)
+- Your AIOS Brain: the brain/ folder, eleven files ready to grow with you
+- Operating skills: /start, /end, /hygiene, /learn, /decide, /recap, /digest, /ask, /granola-pull, /draft-social, /how-to
+- Your five AIOS Brain tools: /avatar-profile, /offer-architect, /conviction-map, /brand-style-guide, /source-of-truth
+- Plus /voice-qa (brand-voice gate) and /gravity-dossier
 - Three protective hooks: credential guard, forbidden-language guard, session-end nudge
 
 **Your test-drive automations are live immediately:**
-- `/perfectlittlebusiness:digest` — your personal weekly summary
-- `/perfectlittlebusiness:granola-pull` — pull meetings into your brain
-- `/perfectlittlebusiness:draft-social` — draft posts in your voice
+- `/digest` — your personal weekly summary
+- `/granola-pull` — pull meetings into your brain
+- `/draft-social` — draft posts in your voice
 
-**Next move:** Type `/perfectlittlebusiness:start` to confirm the system loads. Then begin populating your brain folder using the Launchpad Tools in Authority HQ.
+**Next move:** Type `/start` to confirm the system loads. Then build your AIOS Brain by running your five foundational tools, beginning with `/avatar-profile`.
 
-The operating system is installed. The brain is what you build inside it.
+The operating system is installed. Your AIOS Brain is what you build inside it.
 ```
 
 ---
@@ -123,7 +129,7 @@ Use this template. Replace [BRACKETED] with user answers. Replace [TODAY'S_DATE]
 **Project:** [PROJECT_NAME]
 **Role:** [USER_ROLE]
 **Installed:** [TODAY'S_DATE]
-**AI Operating System version:** perfectlittlebusiness v1.0.0
+**AI Operating System version:** perfectlittlebusiness v1.3.0
 
 ---
 
@@ -152,22 +158,22 @@ This shapes every decision in this project. Reference it when making strategic c
 ## How To Work In This Project
 
 ### At Session Start
-- Run `/perfectlittlebusiness:start` to load full context
+- Run `/start` to load full context
 - Claude reads this file and your brain/ folder
 
 ### During The Session
 - One project per session — do not switch contexts
-- Use `/perfectlittlebusiness:learn` to capture insights mid-session
-- Use `/perfectlittlebusiness:decide` after meaningful decisions
-- Use `/perfectlittlebusiness:ask` for questions grounded in your context
+- Use `/learn` to capture insights mid-session
+- Use `/decide` after meaningful decisions
+- Use `/ask` for questions grounded in your context
 
 ### At Session End
-- Run `/perfectlittlebusiness:end` to log the session and capture learnings
+- Run `/end` to log the session and capture learnings
 - Commit changes before closing
 
 ### Weekly
-- Run `/perfectlittlebusiness:hygiene` once per week (Sundays recommended)
-- Run `/perfectlittlebusiness:digest` for your weekly summary
+- Run `/hygiene` once per week (Sundays recommended)
+- Run `/digest` for your weekly summary
 
 ---
 
@@ -179,10 +185,12 @@ This shapes every decision in this project. Reference it when making strategic c
 ├── MEMORY.md          ← Session log
 ├── README.md          ← Project overview
 ├── .gitignore         ← Exclusion list
-└── brain/             ← Your second brain
+└── brain/             ← Your AIOS Brain
     ├── source-of-truth.md    (what you know)
     ├── convictions.md        (what you believe)
     ├── avatar-profile.md     (who you serve)
+    ├── offer-architecture.md (what you sell)
+    ├── brand-style-guide.md  (how you sound and look)
     ├── learnings.md          (what you've discovered)
     ├── decisions.md          (decisions made, with rationale)
     ├── wins.md               (what's working)
@@ -191,7 +199,7 @@ This shapes every decision in this project. Reference it when making strategic c
     └── templates/            (reusable formats)
 ```
 
-The brain is yours. Edit any file any time.
+The AIOS Brain is yours. Edit any file any time.
 
 ---
 
@@ -201,7 +209,7 @@ The brain is yours. Edit any file any time.
 - Never commit API keys, passwords, or credentials (the credential hook protects this)
 - Approve before deploying
 - Commit before closing
-- Run `/perfectlittlebusiness:end` at session close
+- Run `/end` at session close
 
 ---
 
@@ -212,7 +220,7 @@ This system gets smarter every session through two files:
 - **MEMORY.md** = project timeline (what happened)
 - **brain/learnings.md** = business intelligence (what you discovered)
 
-Every `/perfectlittlebusiness:start` reads both. Every `/perfectlittlebusiness:end` updates both. Over time, Claude builds an accurate model of this business — not from training data, but from your actual lived experience.
+Every `/start` reads both. Every `/end` updates both. Over time, Claude builds an accurate model of this business — not from training data, but from your actual lived experience.
 
 When advising you, Claude prioritizes your learnings.md over generic best practices. Your learnings reflect what's actually working for *this* business.
 
@@ -220,7 +228,7 @@ When advising you, Claude prioritizes your learnings.md over generic best practi
 
 ## Where the Methodology Lives
 
-This plugin installs the *infrastructure layer*. The Perfect Little Business methodology — Authority Directory Method, AI Demand System, voice guidelines, full doctrine — lives in **Collective Wisdom** (perfectlittlebusiness.com), kept current there as the methodology evolves.
+This plugin installs the *infrastructure layer* — your AIOS Brain and the operating skills. The Perfect Little Business methodology and full doctrine live in **Collective Wisdom** (perfectlittlebusiness.com), kept current there as the methodology evolves.
 
 This file is yours. Your `brain/` folder is yours. Both stay clean by living separately from the methodology.
 ```
@@ -232,26 +240,25 @@ This file is yours. Your `brain/` folder is yours. Both stay clean by living sep
 ```markdown
 # Project Memory Log
 
-This file is the timeline of every session. Updated automatically by `/perfectlittlebusiness:end`.
+This file is the timeline of every session. Updated automatically by `/end`.
 
 ---
 
 ## [TODAY'S_DATE] — AI Operating System Installed
 
 **What happened:**
-Initialized the AI Operating System using perfectlittlebusiness v1.0.0. Created CLAUDE.md, MEMORY.md, .gitignore, README.md, and the full brain/ folder. Eleven skills and three protective hooks are now available.
+Initialized the AI Operating System using perfectlittlebusiness v1.3.0. Created CLAUDE.md, MEMORY.md, .gitignore, README.md, and the full AIOS Brain (brain/ folder). Your operating skills, your five AIOS Brain tools, and three protective hooks are now available.
 
 **Git state:** Not yet committed
 **Deploy state:** Not configured (optional, for later)
 
 **Open items / next session:**
-- Populate brain/source-of-truth.md with full business description
-- Add at least one entry to brain/avatar-profile.md
+- Build your AIOS Brain: run `/avatar-profile`, `/offer-architect`, `/conviction-map`, `/brand-style-guide`, then `/source-of-truth`
 - Drop 2-3 voice samples in brain/voice-samples/
-- Run `/perfectlittlebusiness:start` to confirm the system loads
-- Try `/perfectlittlebusiness:digest`, `/perfectlittlebusiness:draft-social`, or `/perfectlittlebusiness:granola-pull` to test-drive the automations
+- Run `/start` to confirm the system loads
+- Try `/digest`, `/draft-social`, or `/granola-pull` to test-drive the automations
 
-**To verify the system is working:** Type `/perfectlittlebusiness:start` in your next session. Claude should read everything and ask what you want to work on.
+**To verify the system is working:** Type `/start` in your next session. Claude should read everything and ask what you want to work on.
 ```
 
 ---
@@ -300,20 +307,20 @@ node_modules/
 
 ## Quick Start
 
-1. Type `/perfectlittlebusiness:start` to load context
+1. Type `/start` to load context
 2. Tell Claude what you want to work on
 3. Approve changes before executing
-4. Type `/perfectlittlebusiness:end` to close cleanly and update memory
+4. Type `/end` to close cleanly and update memory
 
 ## Key Files
 
 - **CLAUDE.md** — master project briefing
 - **MEMORY.md** — session log
-- **brain/** — your second brain
+- **brain/** — your AIOS Brain
 
 ## Created
 
-[TODAY'S_DATE] using perfectlittlebusiness v1.0.0
+[TODAY'S_DATE] using perfectlittlebusiness v1.3.0
 ```
 
 ---
@@ -353,7 +360,7 @@ The master document about this business. Update as your understanding evolves.
 
 ---
 
-**Note:** This file is your north star. Claude reads it every session. Keep it current.
+**Note:** This file is your north star. Claude reads it every session. Keep it current. Run `/source-of-truth` to build it out properly.
 ```
 
 ### brain/convictions.md
@@ -383,7 +390,7 @@ What you believe to be true. What drives your decisions.
 
 ---
 
-**Note:** Convictions evolve. Add new ones as they crystallize.
+**Note:** Convictions evolve. Run `/conviction-map` to build this out properly.
 ```
 
 ### brain/avatar-profile.md
@@ -419,7 +426,55 @@ Who you serve. Not demographics — emotional and behavioral profile.
 
 ---
 
-**Note:** This file gets more specific over time as you learn from real conversations.
+**Note:** Run `/avatar-profile` to build this out properly. It gets more specific over time as you learn from real conversations.
+```
+
+### brain/offer-architecture.md
+
+```markdown
+# Offer Architecture
+
+What you sell and how it's structured.
+
+## Your Core Offer
+
+[To populate]
+
+## Offer Stack
+
+[To populate]
+
+## Who It's For / What It Solves
+
+[To populate]
+
+---
+
+**Note:** Run `/offer-architect` to build this out properly.
+```
+
+### brain/brand-style-guide.md
+
+```markdown
+# Brand Style Guide
+
+How you sound and look.
+
+## Voice & Tone
+
+[To populate]
+
+## Words You Use / Words You Never Use
+
+[To populate]
+
+## Visual Identity
+
+[To populate]
+
+---
+
+**Note:** Run `/brand-style-guide` to build this out properly. Claude checks this before drafting anything in your name.
 ```
 
 ### brain/learnings.md
@@ -431,7 +486,7 @@ The self-improving layer of your operating system.
 
 **Purpose:** Capture what you discover about your business. Patterns, insights, market signals, what's working, what's not. Claude reads this every session.
 
-**How it grows:** `/perfectlittlebusiness:learn` captures mid-session. `/perfectlittlebusiness:end` prompts at session close.
+**How it grows:** `/learn` captures mid-session. `/end` prompts at session close.
 
 ---
 
@@ -471,7 +526,7 @@ The self-improving layer of your operating system.
 
 Meaningful decisions made in this project, with full context and rationale.
 
-Populated by `/perfectlittlebusiness:decide` after each significant call.
+Populated by `/decide` after each significant call.
 
 ---
 
@@ -485,7 +540,7 @@ Populated by `/perfectlittlebusiness:decide` after each significant call.
 
 What's worked. What's landing. What's converting.
 
-Populated by `/perfectlittlebusiness:end` at session close, or manually whenever something works.
+Populated by `/end` at session close, or manually whenever something works.
 
 ---
 
@@ -525,7 +580,7 @@ Examples:
 - Past client work samples
 - Articles that shaped your thinking
 - Transcripts of key conversations
-- Meeting notes (or use `/perfectlittlebusiness:granola-pull` to auto-import)
+- Meeting notes (or use `/granola-pull` to auto-import)
 - Frameworks you've developed
 
 Organize as you like. Subfolders are fine.
@@ -555,4 +610,4 @@ Empty for now. Add templates as patterns emerge.
 - Do not auto-generate content for files not explicitly templated above.
 - If the user gives a very short answer to Q3, ask one clarifying question before proceeding. Then move on.
 - If the user is uncomfortable answering Q5, accept a placeholder ("to be discovered") and note it in convictions.md.
-- After completion, do NOT proceed to other work in the same response. The user needs to type `/perfectlittlebusiness:start` to verify the install before doing anything else.
+- After completion, do NOT proceed to other work in the same response. The user needs to type `/start` to verify the install before doing anything else.

@@ -3,7 +3,7 @@ name: recap
 description: The "where am I" rescue skill. Produces a 60-second briefing of recent session history, learnings, decisions, and open items. Use when returning to a project after time away or when you've lost the thread mid-session.
 ---
 
-# /perfectlittlebusiness:recap — Where Am I Lifeline
+# /recap — Where Am I Lifeline
 
 ## Purpose
 
@@ -77,4 +77,4 @@ Wait for the user's response. Do not proceed with work yet.
 - If sections are empty (e.g., no decisions yet), omit that section rather than printing "(no decisions logged)".
 - This is a read-only skill. Do not write to any files.
 - If the project is very new (less than 5 entries in MEMORY.md), show what's there. Don't pad.
-- This is a longer report than /perfectlittlebusiness:start. /perfectlittlebusiness:start is "where are we today." /perfectlittlebusiness:recap is "where have we been."
+- This is a longer report than /start. /start is "where are we today." /recap is "where have we been."

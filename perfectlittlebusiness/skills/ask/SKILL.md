@@ -3,7 +3,7 @@ name: ask
 description: Ask Claude a question grounded in your full brain context. Forces Claude to read CLAUDE.md and brain/ before answering, ensuring the response is specific to your business, not generic.
 ---
 
-# /perfectlittlebusiness:ask — Contextual Brain Query
+# /ask — Contextual Brain Query
 
 ## Purpose
 
@@ -21,9 +21,9 @@ Force Claude to answer using the user's full context, not generic knowledge. Use
 
 ### Step 1: Get the Question
 
-If the user typed `/perfectlittlebusiness:ask` alone, ask: "What's your question?"
+If the user typed `/ask` alone, ask: "What's your question?"
 
-If the user typed `/perfectlittlebusiness:ask [question]`, use the content directly.
+If the user typed `/ask [question]`, use the content directly.
 
 ### Step 2: Read Everything Relevant
 

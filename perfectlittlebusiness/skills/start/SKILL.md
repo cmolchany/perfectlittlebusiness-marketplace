@@ -3,7 +3,7 @@ name: start
 description: Session opener. Loads CLAUDE.md, the entire brain/ folder, and git status at the beginning of every session. Run this first in every session.
 ---
 
-# /perfectlittlebusiness:start — Session Opener
+# /start — Session Opener
 
 ## Purpose
 

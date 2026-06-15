@@ -3,7 +3,7 @@ name: draft-social
 description: Draft social media posts in your voice from your recent learnings, wins, and convictions. Produces 3 versions to choose from. Calibrated to your voice samples and stated brand voice.
 ---
 
-# /perfectlittlebusiness:draft-social — Voice-Calibrated Social Drafter
+# /draft-social — Voice-Calibrated Social Drafter
 
 ## Purpose
 
