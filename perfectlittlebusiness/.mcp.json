@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "perfectlittlebusiness": {
+      "type": "http",
+      "url": "https://phase-a--chimerical-pie-e7e86e.netlify.app/api/mcp"
+    }
+  }
+}

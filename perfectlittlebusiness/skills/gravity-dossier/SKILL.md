@@ -415,13 +415,7 @@ carry what she calls X"), never through metadata tags.
 
 ---
 
-## Calibration (eval pair)
+## One topic per dossier
 
-To validate a build, run in BYO mode on the example interview transcript and
-compare the output to the example dossier for voice, depth, and structure:
-
-- transcript: `Perfect_Little_Business/AuthorityHQ/raw/output-examples/gravity-interview-transcript-example.md`
-- target dossier: `Perfect_Little_Business/AuthorityHQ/raw/output-examples/gravity-dossier-example.md`
-
-A good build, fed the example transcript, should produce a dossier comparable in
-voice, depth, and structure to the example dossier.
+Run this once per thought-leadership topic. Multiple topics mean multiple runs,
+each producing its own dossier in `{BRAIN_PATH}/dossiers/`.

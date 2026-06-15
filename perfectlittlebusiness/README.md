@@ -2,7 +2,7 @@
 
 The Perfect Little Business Launchpad is the infrastructure layer of your AI Operating System, installed in Claude Code.
 
-Install it once. You get your second-brain folder structure, eleven working skills, three protective hooks, and the self-improvement loop that makes every session smarter than the last.
+Install it once. You get your second-brain folder structure, thirteen working skills, the voice-qa gate, three protective hooks, and the self-improvement loop that makes every session smarter than the last.
 
 This is the operating system. Your brain populates inside it.
 
@@ -10,24 +10,33 @@ This is the operating system. Your brain populates inside it.
 
 ## What This Plugin Installs
 
-### Eleven Skills
+### Thirteen Skills
 
 **Core infrastructure:**
-- `/perfectlittlebusiness:setup` — One-time orchestrator. Creates your project structure, brain folder, and CLAUDE.md.
-- `/perfectlittlebusiness:start` — Loads your context at the beginning of every session.
-- `/perfectlittlebusiness:end` — Closes the session cleanly. Updates MEMORY.md, learnings.md, wins.md, and commits.
-- `/perfectlittlebusiness:hygiene` — Weekly health check.
-- `/perfectlittlebusiness:recap` — "Where am I?" lifeline when returning to a project.
+- `/perfectlittlebusiness:setup`: One-time orchestrator. Creates your project structure, brain folder, and CLAUDE.md.
+- `/perfectlittlebusiness:start`: Loads your context at the beginning of every session.
+- `/perfectlittlebusiness:end`: Closes the session cleanly. Updates MEMORY.md, learnings.md, wins.md, and commits.
+- `/perfectlittlebusiness:hygiene`: Weekly health check.
+- `/perfectlittlebusiness:recap`: "Where am I?" lifeline when returning to a project.
 
 **Brain-building:**
-- `/perfectlittlebusiness:learn` — Capture an insight mid-session without ending the session.
-- `/perfectlittlebusiness:decide` — Log a decision with full context and rationale.
-- `/perfectlittlebusiness:ask` — Ask Claude a question grounded in your full brain context.
+- `/perfectlittlebusiness:learn`: Capture an insight mid-session without ending the session.
+- `/perfectlittlebusiness:decide`: Log a decision with full context and rationale.
+- `/perfectlittlebusiness:ask`: Ask Claude a question grounded in your full brain context.
+
+**Thought leadership:**
+- `/perfectlittlebusiness:gravity-dossier`: Interview yourself, or bring notes or a transcript, on one topic and get back a voice-preserved Thought Leadership Dossier: the source-of-truth document your content gets built from.
+
+**Getting unstuck:**
+- `/perfectlittlebusiness:how-to`: Name a goal you want to reach with Claude and get walked there one beginner-proof step at a time, until you have built it yourself.
 
 **Test-drive automations (use these while you're still building your brain):**
-- `/perfectlittlebusiness:digest` — Personal weekly summary from your MEMORY, learnings, and wins.
-- `/perfectlittlebusiness:granola-pull` — Pull a Granola meeting into your brain folder. Surfaces candidate learnings.
-- `/perfectlittlebusiness:draft-social` — Draft social posts in your voice from your recent learnings and wins.
+- `/perfectlittlebusiness:digest`: Personal weekly summary from your MEMORY, learnings, and wins.
+- `/perfectlittlebusiness:granola-pull`: Pull a Granola meeting into your brain folder. Surfaces candidate learnings.
+- `/perfectlittlebusiness:draft-social`: Draft social posts in your voice from your recent learnings and wins.
+
+### The voice-qa gate
+- `/perfectlittlebusiness:voice-qa`: Checks any draft against your brand voice rules and the universal "sounds like AI" tells before it ships. The Dossier runs it automatically; you can also run it on anything.
 
 ### Three Protective Hooks
 
@@ -99,7 +108,7 @@ That's the intelligence layer. Two weeks. Then your `brain/` folder holds the se
 
 When the two weeks close, two paths stay open.
 
-### Collective Wisdom — $297/mo
+### Collective Wisdom
 
 The ongoing methodology community. Where the Authority Directory Method, the AI Demand System, the voice guidelines, and the rest of the PLB doctrine live — and stay current. You'll get plugin updates, methodology evolutions, and the community of other AIOS operators building alongside you.
 
@@ -107,8 +116,10 @@ The ongoing methodology community. Where the Authority Directory Method, the AI 
 
 When you're ready to build the public-facing asset AI recommends in your domain:
 
-- **$997 one-time** — your own Authority Directory codebase, configured and yours to run
-- **$5,300** — done-for-you build by the PLB team
+- **Self-install** — your own Authority Directory codebase, configured and yours to run
+- **Done-for-you** — built by the PLB team
+
+Ask about current options on a call.
 
 ---
 
