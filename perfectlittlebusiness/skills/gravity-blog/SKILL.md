@@ -60,7 +60,7 @@ content source):
 
 | Role | Pattern | What to pull |
 |---|---|---|
-| **Source of Truth** | `*sot*`, `*source*of*truth*` | Voice standard, coined terms, expert name + expertise, author bio, and schema/metadata values (domain, site title, organization, author URL / role) |
+| **Source of Truth** | `*sot*`, `*source*of*truth*` | Voice standard, coined terms, expert name + expertise, author bio, and metadata values (domain, site title, organization, author URL / role) |
 | **Avatar profile** | `*avatar*` | Ideal client's problem, emotional state, the language they actually use |
 | **Convictions map** | `*conviction*` | SILENT CONSTRAINT — belief shifts to reinforce, contrarian positions for the Perspective block. Never quoted, never a content source |
 | **Brand voice rules** | `*voice*` | Hard voice rules the output must satisfy (also enforced by voice-qa) |
@@ -136,6 +136,27 @@ list, before/after table, pillar set, stat line, highlight callout). **Minimum
 editorial-infographic components a later build converts; markdown is the output
 here.
 
+### Cohesion — argument first, extractable chunks second (non-negotiable)
+
+The AEO rule above pulls toward fragments: each section answers itself, so the
+sections stop building on each other and the piece reads as stacked cards. That
+is the failure mode to beat. Reconcile extractability WITH cohesion, in this
+order:
+
+1. **Cohesion first.** Plant a clear thesis in the lede that the whole piece sets
+   out to prove (the anchor). Build a felt narrative AND emotional arc: each
+   section earns the next with a hook, a transition, rising stakes. Put the core
+   named concept in the headline.
+2. **Extractability second, on top.** Keep the 40–60 word answer-first leads, but
+   make each lead ADVANCE the argument (never restate what an earlier section
+   already said), and end each section on a forward hook that opens the question
+   the next section answers.
+
+The test: a reader can follow it start to finish and end up believing something
+new, AND an AI can lift any single section cleanly. If you can only get one,
+cohesion wins. The 10-part structure's narrative arc must be a FELT arc, not just
+section ordering.
+
 ### The 10-part structure (do not deviate)
 
 1. **Title** — a bold claim or named concept, not a query. A magazine cover
@@ -164,20 +185,20 @@ here.
    after the single strongest belief-shift moment. With the closing one (§9),
    that is **2 total for the whole piece — never more**. Do not write CTA copy.
 8. **FAQ** — 6–8 questions, 100–150-word answers, in the expert's voice;
-   address objections and edge cases, go deeper than the body. Mirror these in
-   the schema block.
+   address objections and edge cases, go deeper than the body.
 9. **Closing argument** — 2–3 paragraphs, no new info, lands the case, ends on a
    one-line conviction statement. Then a final `[CTA BOX]` placeholder.
 10. **Author bio** — third person, ~100 words, the expert's specific expertise
     (from SOT), ends linking to the domain. Use the SOT author-bio text.
 
-### Schema (fenced block at the top or bottom of the markdown)
+### Schema — do NOT generate (the destination site handles it)
 
-Include a `json` fenced block with an `@graph` of Article + FAQPage +
-BreadcrumbList (+ optional HowTo if there's a clear step section). Pull
-author/publisher/domain values from the SOT. The FAQ schema must match the
-visible FAQ word for word. (In markdown-only output this is a fenced block the
-later HTML build lifts into `<head>`.)
+Do not emit a JSON-LD / schema fenced block. The destination site generates its
+own structured data (Article, FAQPage, BreadcrumbList) at build time, so a schema
+block in this markdown is redundant and a sync liability. Output clean markdown
+only. Keep the visible FAQ (it is content); there is no schema mirror to maintain.
+(Decision 2026-06-14. Scope: the Gravity pipeline outputs markdown to a site that
+adds its own schema; this does not change skills that ship schema in their own HTML.)
 
 ### Dossier → guide mapping (where each part comes from)
 
@@ -263,7 +284,7 @@ cornerstone (single CTA).
 ## Output
 
 - **Cornerstone:** `{BRAIN_PATH}/content/blog/cornerstone-<topic-slug>-<YYYY-MM>.md`
-  (with the schema fenced block).
+  (clean markdown, no schema block).
 - **Emails:** `{BRAIN_PATH}/content/blog/emails-<topic-slug>-<YYYY-MM>.md` —
   all four in one file, labeled `=== EMAIL 1 (WEEK 1) ===` … `=== EMAIL 4 (WEEK 4) ===`.
 - Create `{BRAIN_PATH}/content/blog/` if absent.
@@ -288,9 +309,10 @@ cornerstone (single CTA).
 - [ ] Lede is 2–3 sentences, thesis with conviction, no "in this article"
 - [ ] 6–8 belief-shifting Key Takeaways
 - [ ] Narrative arc flows Problem → Why → Failed solutions → Shift → Model/Method → Implications → What survives
+- [ ] Cohesion: a thesis is planted in the lede that the whole piece proves; each section advances (no restating) and ends on a forward hook; a reader can follow it start to finish (a FELT arc, not just section order)
 - [ ] ≥3–4 visual content blocks, distributed; no 400+ word wall of prose
 - [ ] The dossier's Method/Process appears as a clear block (step-list or pillars)
-- [ ] FAQ has 6–8 Q's; schema block matches the visible FAQ word for word
+- [ ] FAQ has 6–8 Q's (visible content only; do NOT generate a schema block)
 - [ ] Two `[CTA BOX]` placeholders (mid + closing); no CTA copy written
 - [ ] Closing ends on a one-line conviction statement
 - [ ] 4 emails, each 250–450 words, each a standalone complete insight, single CTA to the blog
