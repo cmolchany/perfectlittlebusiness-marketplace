@@ -12,9 +12,9 @@ exists to carry the canonical brain pointer for dev sessions.
 The canonical source for ALL Perfect Little Business strategy, brand, and
 offer files is, permanently:
 
-`/Users/cindymolchany/Dropbox/_00_COWORK_OS/_BRAIN/`
+`/Users/cindymolchany/Dropbox/business-os/brain/`
 
-- Read `_BRAIN/_INDEX.md` first — it holds the file map and the
+- Read `business-os/brain/_INDEX.md` first — it holds the file map and the
   inheritance order (Offer Stack → SOT v7.0 → everything else).
 - Read brain files directly from that path. Never copy brain files into
   this project.
